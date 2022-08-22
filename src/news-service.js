@@ -8,7 +8,7 @@ export default class NewsApiServ{
     }
     async fetchArticles() {
         try { 
-             const r = await axios.get(`https://pixabay.com/api/?key=229388258-a8364d8d5733147bd409d2c64a&q=${this.query}&safesearch=true&image_type=photo&orientation=horizontal&per_page=${this.per_page}&page=${this.page}`)
+             const r = await axios.get(`https://pixabay.com/api/?key=29388258-a8364d8d5733147bd409d2c64&q=${this.query}&safesearch=true&image_type=photo&orientation=horizontal&per_page=${this.per_page}&page=${this.page}`)
             this.getNewPage();
             return r.data;
         }
